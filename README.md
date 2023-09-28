@@ -224,3 +224,8 @@ If you lose this file, you lose knowning the state of your infrastructure.
 
 ### Terraform Directory
 `.terraform` directory contains binaries of terraform providers.
+
+### Create S3 Bucket
+Configure naming rules to only include lower case letters and remove upper case as it is a requirement in naming S3 buckets.
+
+[S3 Bucket Naming Rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html?icmpid=docs_amazons3_console)
