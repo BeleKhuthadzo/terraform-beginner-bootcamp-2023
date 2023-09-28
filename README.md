@@ -199,6 +199,13 @@ This will run a plan and pass the changeset to be execute by terraform. Apply sh
 
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
 
+### Terraform Destroy
+
+`teraform destroy` 
+This will destroy resources.
+
+You can alos use the auto approve flag to skip the approve prompt eg. `terraform apply --auto-approve`
+
 ## Terraform Lock Files
 `.terraform.lock.hcl` contains the locked versioning for the providers or modulues that should be used with this project.
 
@@ -217,3 +224,8 @@ If you lose this file, you lose knowning the state of your infrastructure.
 
 ### Terraform Directory
 `.terraform` directory contains binaries of terraform providers.
+
+### Create S3 Bucket
+Configure naming rules to only include lower case letters and remove upper case as it is a requirement in naming S3 buckets.
+
+[S3 Bucket Naming Rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html?icmpid=docs_amazons3_console)
